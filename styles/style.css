@@ -1,91 +1,124 @@
-#background {
-    /* position: absolute; */
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+@import url(//fonts.googleapis.com/css?family=Lato:300:400); 
+
+.mainContainer
+{
+    display: flex;
+flex-direction: column;
 }
-.text-primary.text-uppercase.mb-3.animated.slideInDown{
-    padding-bottom: 70px;
+.imgLogo {
+display: flex;
+margin-left: 50px;
+margin-bottom: 20px;
+    
 }
-
-#down__shape {
-		fill: rgba(254,214,214,1);
-	}
-	.down__shape {
-		overflow: visible;
-		position: absolute;
-		width: 100%;
-		height: auto;
-		left: 0px;
-		/* top: 474.251px; */
-		transform: matrix(1,0,0,1,0,0);
-	z-index: -1;
-    }
-
-    #shape__bg_t {
-		fill: url(#shape__bg_t);
-	}
-	.shape__bg_t {
-        
-		overflow: visible;
-		position: absolute;
-		/* width: 100%;
-		height: 100%; */
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-/********** Template CSS **********/
-
-@media (max-width: 768px) {
-    .shape__bg_t {
-     
- 
-     /* width: 100%; */
-     height: 100%;
-     
-}}
-
-
-
-/* #background{
-    height: 700px;
-} */
-
-.header-carousel .owl-carousel-item {
-    position: relative;
-    min-height: 500px;
+.btnLogo{
+    flex-direction: row-reverse;
+display: flex;
 }
 
-.header-carousel .owl-carousel-item img {
-    /* position: absolute; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.btn-warning{
+    color: #ffff !important;
 }
 
+.button1 {
+    background-color: white;
+    color: rgb(229, 66, 66);
+    border: 2px solid #000000; /* Green */
+    font-size: 16px;
+   
+  }
+  .button2 {
+    background-color: rgb(229, 66, 66);
+    color: white;
+    border: 2px solid white; /* Green */
+    font-size: 16px;
+   
+  }
+  .button1 a { 
+  text-decoration: none;
+  color: rgb(229, 66, 66);
+  
+  }
+  .formContainer{
+      text-align: left;
+  }
+  /* .btn{
+      border: #ffff;
+  } */
+/* body */
 
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    /* color: #000; */
 }
 
 .subs{       
-    border-top: 3px solid rgb(255, 0, 0);
-    border-color: rgb(255, 0, 0);
-    border-bottom: 3px solid rgb(255, 0, 0);    
+    border-top: 3px solid #f33f3f;
+    border-color: #f33f3f;
+    border-bottom: 3px solid #f33f3f; 
+    width: 5%; 
+    margin: 0 47% 0 47%;   
+}
+
+#line{
+    border-top: 3px solid rgb(114, 114, 114);
+    border-color: rgb(114, 114, 114);
+    margin: 0 15% 0 15%;
+    margin-bottom: 40px;
+}
+
+/* Main */
+
+.cardsideform{
+    /* height: 500px; */
+    text-align: left;
+    
+    
 }
 
 
+
+#cardform {
+    box-shadow: rgb(172, 172, 172) 0px 0px 15px;
+    /* height: 500px;     */
+    border-radius: 15px;
+    color: #000000;
+}
+
+
+/*Fin de main */
+
+/* Beneficios */
+
+#imgbeneficios {
+    width: 40px;
+    margin-left: 17px;
+}
+
+.displaytext {
+    color: #ff6f6f;
+}
+
+.displaytext span {
+    color: #ff6f6f;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+
+/* Fin de beneficios */
+
+
 /* Casos de exito */
-#btn-contratar{
-    background-color: linear-gradient(to right, #ff6f6f, #ffcdcd);
+#btn-contratar{    
+    background: linear-gradient(to right, #f33f3f, #c98585);
     color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     
 }
 
@@ -95,15 +128,37 @@
 
 /* Fin de Casos de exito */
 
-/*Precios*/
+/* Obtener */
 
-.startercard {
-    border: 0px solid #fff;
+#cardobtener{
+    height: 350px;
+    border-radius: 20px 20px 5px 5px;
+    box-shadow: rgb(172, 172, 172) 0px 0px 10px;
 }
 
-.premiumcard {
-    border: 0px solid #fff;
+/* Fin de obtener */
+
+/* Venta */
+
+#venta{
+    background-image: url("../assets/Clip.png");    
+}
+
+.cardventa {
+    background-color: transparent;
+}
+
+/* Fin de venta */
+
+/*Precios*/
+
+.startercard {    
+    height: 1400px;
+}
+
+.premiumcard {    
     box-shadow: rgb(172, 172, 172) 0px 0px 50px;
+    height: 1400px;
 }
 
 .img-price {
@@ -113,11 +168,17 @@
 
 .text-price{
     color: #ff6f6f;
+    text-decoration: line-through;
 }
 
 .price {
-    font-size: 50px;    
+    font-size: 25px;       
     margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 45px; 
+    font-weight: bold;
 }
 
 .line {
@@ -153,3 +214,93 @@
     color: #000000;
     font-weight: 200;
 }
+
+/*Waves*/ 
+ 
+ .header {  
+  position:relative;  
+  text-align:center;  
+  background: linear-gradient(60deg, rgb(229, 66, 66) 0%, rgb(255, 175, 175) 100%);  
+  color:white;  
+ }  
+ .logo {  
+  width:50px;  
+  fill:white;  
+  padding-right:15px;  
+  display:inline-block;  
+  vertical-align: middle;  
+ }  
+ .inner-header {  
+  height:85vh;  
+  width:100%;  
+  margin: 0;  
+  padding: 0;  
+ }  
+ .flex { /*Flexbox for containers*/  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  text-align: center;  
+ }  
+ .waves {  
+  position:relative;  
+  width: 100%;  
+  height:15vh;  
+  margin-bottom:-7px; /*Fix for safari gap*/  
+  min-height:100px;  
+  max-height:150px;  
+ }  
+ .content {  
+  position:relative;  
+  height:20vh;  
+  text-align:center;  
+  background-color: white;  
+ }  
+ /* Animation */  
+ .parallax > use {  
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)   infinite;  
+ }  
+ .parallax > use:nth-child(1) {  
+  animation-delay: -2s;  
+  animation-duration: 7s;  
+ }  
+ .parallax > use:nth-child(2) {  
+  animation-delay: -3s;  
+  animation-duration: 10s;  
+ }  
+ .parallax > use:nth-child(3) {  
+  animation-delay: -4s;  
+  animation-duration: 13s;  
+ }  
+ .parallax > use:nth-child(4) {  
+  animation-delay: -5s;  
+  animation-duration: 20s;  
+ }  
+ @keyframes move-forever {  
+  0% {  
+   transform: translate3d(-90px,0,0);  
+  }  
+  100% {   
+   transform: translate3d(85px,0,0);  
+  }  
+ }  
+ /*Shrinking for mobile*/  
+ @media (max-width: 768px) {  
+  .waves {  
+   height:40px;  
+   min-height:40px;  
+  }  
+  .content {  
+   height:30vh;  
+  } 
+  
+ 
+
+ }  
+ @media (min-width: 1000px) {  
+ .cardsideform{
+    margin-top: 70px;
+    margin-right: 70px;
+}
+
+/*Fin Waves*/
