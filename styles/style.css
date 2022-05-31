@@ -136,11 +136,22 @@ margin-bottom: 20px;
 
 /* Venta */
 #venta{
-    background-image: url("../assets/Clip.png");    
+    background: url("../assets/Clip.png");  
+    
+    background-size: cover; 
+    overflow: hidden;
+    
+    
+
+
 }
 
 .cardventa {
-    background-color: transparent;
+    
+    overflow: hidden;
+    background: none;
+    border: none;
+    color: #ffff;
 }
 /* Fin de venta */
 
